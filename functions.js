@@ -180,20 +180,21 @@ Output:
 */
 
 export function getCars(arr) {
-    return [];
+    return arr.filter(arr => arr.type === 'car');
 }
 
 /*
 Output:
- [
+[
         { type: 'car', make: 'chevy', model: 'malibu' },
         { type: 'car', make: 'chevy', model: 'camero' },
-  ] ;
+    ] ;
 
 */
 
 export function getChevyCars(arr) {
-    return [];
+    return arr.filter(arr => (arr.make === 'chevy' && arr.type === 'car')
+    );
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
